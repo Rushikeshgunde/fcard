@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:"poppins"sans-serif;
+}
+body{
+    background-color: #fdbf00;
+}
+.card{
+    /* border: 1px solid white; */
+    width: 640px;
+    height: 400px;
+    position:absolute;
+    margin-top: 200px;;
+    margin-left:50%;;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+   
+}
+.card:hover{
+    transform: rotate(-5deg);
+}
+.card:hover .outside{
+    transform: rotateY(-130deg);
+}
+
+ .outside,.inside{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+}
+.inside{
+   
+    background: linear-gradient(to right,#e0e0e0,
+    #ffffff 30%);
+    line-height:2;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+.outside{
+-webkit-transform-style: preserve-3d;
+transform-style:preserve-3d ;
+z-index: 1;
+transform-origin: left;
+transition: 2s;
+}
+.front,.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+.front{
+    background-color: #ffffff;
+    background-image: url("https://th.bing.com/th/id/OIP.idW5di2ESxtcIxT021J8cgHaHa?w=145&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+    height: 100%;
+    width: 100%;
+    background-size: 50%;
+}
+.back{
+    transform: rotateY(180deg);
+    background: linear-gradient(to left,#e0e0e0
+    #ffffff 30%);
+    background-image: url("https://th.bing.com/th/id/OIP.idW5di2ESxtcIxT021J8cgHaHa?w=145&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+
+}
+.inside h1{
+    font-size: 60px;
+    line-height: 40px;
+    /* background-image: url("https://shortstatusquotes.com/wp-content/uploads/friendship-day-fb-status.jpg"); */
+}
+
+@media screen {
+
+    .card{
+        /* border: 1px solid white; */
+        width: 640px;
+        height: 400px;
+        position:absolute;
+        margin-top: 200px;;
+        margin-left: 50px;;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-perspective: 1200px;
+        perspective: 1200px;
+        transition: 1s;
+       
+    }  
+
+    .card:hover{
+        transform: rotate(-5deg);
+    }
+    .card:hover .outside{
+        transform: rotateY(-130deg);
+    }
+
+    .inside{
+   
+        background: linear-gradient(to right,#e0e0e0,
+        #ffffff 30%);
+        line-height:2;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        left: 50%;
+    }
+    .outside{
+    -webkit-transform-style: preserve-3d;
+    transform-style:preserve-3d ;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    }
+    .front,.back{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: rotateX(0deg);
+    }
+    .front{
+        background-color: #ffffff;
+        background-image: url("https://th.bing.com/th/id/OIP.idW5di2ESxtcIxT021J8cgHaHa?w=145&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        height: 100%;
+        width: 100%;
+        background-size: 50%;
+    }
+    .back{
+        transform: rotateY(180deg);
+        background: linear-gradient(to left,#e0e0e0
+        #ffffff 30%);
+        background-image: url("https://th.bing.com/th/id/OIP.idW5di2ESxtcIxT021J8cgHaHa?w=145&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+    
+    }
+    .inside h1{
+        font-size: 60px;
+        line-height: 40px;
+        /* background-image: url("https://shortstatusquotes.com/wp-content/uploads/friendship-day-fb-status.jpg"); */
+    }
+    
+
+    .outside,.inside{
+        /* border: 1px solid black; */
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        left: 50.1%;
+    }
+
+}
+
+
+/*
+.cake{
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+.top-layer,.middle-layer,.bottom-layer{
+    height: 100px;
+    width: 240px;
+    background-repeat:no-repeat;
+    /* background-size: 60px 100px; */
+    /* background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px
+    ),
+    radial-gradient(
+        circle at 30px 5px, #994c10
+        30px,#fcbf29 31px);
+        border-radius: 10px 10px 0 0;
+        position: relative;
+        margin: auto; */
+        /* background-image: url("https://th.bing.com/th/id/OIP.idW5di2ESxtcIxT021J8cgHaHa?w=145&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"); */
